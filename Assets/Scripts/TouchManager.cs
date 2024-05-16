@@ -10,6 +10,11 @@ public class TouchManager : MonoBehaviour
     private InputAction touchPress;
     [SerializeField] private GameObject player;
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
