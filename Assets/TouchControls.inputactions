@@ -1,0 +1,12 @@
+{
+    "name": "TouchControls",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "8aabd620-ab77-453c-b437-ee8d8a917284",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}
