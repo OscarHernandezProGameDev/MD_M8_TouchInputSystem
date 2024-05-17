@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TouchManager : MonoBehaviour
+public class TouchBasicManager : MonoBehaviour
 {
     private PlayerInput playerInput;
+    private InputActionMap touchBasicMap;
     private InputAction touchPosition;
     private InputAction touchPress;
     [SerializeField] private GameObject player;
@@ -18,8 +19,9 @@ public class TouchManager : MonoBehaviour
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        touchPosition = playerInput.actions["TouchPosition"];
-        touchPress = playerInput.actions["TouchPress"];
+        touchBasicMap = playerInput.actions.FindActionMap("TouchBasic");
+        touchPosition = touchBasicMap["TouchPosition"];
+        touchPress = touchBasicMap["TouchPress"];
     }
 
     void OnEnable()

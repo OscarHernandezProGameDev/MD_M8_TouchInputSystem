@@ -751,7 +751,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Touch
+  m_DefaultActionMap: TouchBasic
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &2110744259
