@@ -96,6 +96,94 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "TouchZoom",
+            "id": "1074eb96-ff63-444e-aed3-4386004e1d88",
+            "actions": [
+                {
+                    "name": "PrimaryFingerPosition",
+                    "type": "PassThrough",
+                    "id": "7cc7ac2e-7fb2-4df7-834e-7bfcbe8b76b5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecundaryFingerPosition",
+                    "type": "PassThrough",
+                    "id": "64d2d1ef-662d-4c38-aefa-d499841331ce",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryTouchContact",
+                    "type": "Button",
+                    "id": "cb631bd1-2f43-4d9c-866d-5dff4376f768",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecundaryTouchContact",
+                    "type": "Button",
+                    "id": "b5493de9-e769-4b3e-8d87-e918a61d3b93",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "317a31f2-bb54-427a-a9ec-4e446478cdce",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8dfc09d6-d448-4909-b8bd-805c09ca6d9b",
+                    "path": "<Touchscreen>/touch1/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecundaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3fadecad-93eb-4a87-96dd-ade01dca9bb6",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryTouchContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47c80f31-7da0-44e3-a1a4-1c4f558acd73",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecundaryTouchContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TouchBasic.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/TouchZoom.unity
+    guid: 9fa26ff61eecf6b458cb3a0dd7c319b3
   m_configObjects: {}
