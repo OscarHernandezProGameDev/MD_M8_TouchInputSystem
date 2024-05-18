@@ -232,6 +232,134 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Multitouch",
+            "id": "dfad5040-172a-45c4-a1a8-1034b2d43f96",
+            "actions": [
+                {
+                    "name": "FirstTouch",
+                    "type": "Button",
+                    "id": "f1fcdede-cb88-4131-8c1c-afda6c06453d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondTouch",
+                    "type": "Button",
+                    "id": "35b574fa-2210-4b2b-afae-ad274de22914",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThirdTounch",
+                    "type": "Button",
+                    "id": "f745ada1-6771-4fc4-90e8-ebf4110df85b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FirstPosition",
+                    "type": "PassThrough",
+                    "id": "51a91169-a035-4e44-a4d7-4b57401b767f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecondPosition",
+                    "type": "PassThrough",
+                    "id": "b745e4e0-4504-42fb-8dc1-b66d8cb353e2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThirdPosition",
+                    "type": "PassThrough",
+                    "id": "f15e64d3-a137-40d9-9730-f54bbf2835ab",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "69794d79-7bcf-4c66-8174-7834e4eb9dce",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FirstTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "939bb9ae-2dc5-462f-b78f-1172a9ad8aa6",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c34bf3b4-448a-45a2-8663-0a8d72aac647",
+                    "path": "<Touchscreen>/touch2/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThirdTounch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c94de470-5e1d-4196-ae26-8da68d43c8d7",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FirstPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4d452a4-08e8-413f-b92f-7cced3bde19c",
+                    "path": "<Touchscreen>/touch1/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecondPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "964f08ba-8934-492b-b61a-608dec8a9f96",
+                    "path": "<Touchscreen>/touch2/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThirdPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
