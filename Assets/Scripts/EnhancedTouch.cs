@@ -9,10 +9,6 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class EnhancedTouch : MonoBehaviour
 {
-    private PlayerInput playerInput;
-    private InputActionMap touchBasicMap;
-    private InputAction touchPosition;
-    private InputAction touchPress;
     [SerializeField] private GameObject player;
 
     public void QuitGame()
@@ -20,27 +16,11 @@ public class EnhancedTouch : MonoBehaviour
         Application.Quit();
     }
 
-    void Awake()
-    {
-        //playerInput = GetComponent<PlayerInput>();
-        //touchBasicMap = playerInput.actions.FindActionMap("TouchBasic");
-        //touchPosition = touchBasicMap["TouchPosition"];
-        //touchPress = touchBasicMap["TouchPress"];
-    }
-
     void OnEnable()
     {
         EnhancedTouchSupport.Enable();
         //Touch.onFingerDown += FingerDown;
         TouchSimulation.Enable();
-    }
-
-    void OnDisable()
-    {
-        //touchPress.performed -= TouchPress;
-        //Touch.onFingerDown -= FingerDown;
-        TouchSimulation.Disable();
-        EnhancedTouchSupport.Disable();
     }
 
     void Update()
@@ -91,5 +71,13 @@ public class EnhancedTouch : MonoBehaviour
 
         position.z = player.transform.position.z;
         player.transform.position = position;
+    }
+
+    void OnDisable()
+    {
+        //touchPress.performed -= TouchPress;
+        //Touch.onFingerDown -= FingerDown;
+        TouchSimulation.Disable();
+        EnhancedTouchSupport.Disable();
     }
 }

@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float minYAngle = 50f;
     private float rotationY = 0f;
 
-    private void Update()
+    private void LateUpdate()
     {
         Vector2 input = playerInput.actions["Look"].ReadValue<Vector2>();
         float joyX = input.x;
